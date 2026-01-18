@@ -78,6 +78,17 @@ button {
     margin-top: 22px;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
 /* ========== Header ========== */
 .header {
     position: sticky;
@@ -365,11 +376,13 @@ button {
     align-items: center;
 }
 
-.popular .course-item .title {
+.popular .course-item .title a {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
+    padding-right: 6px;
+    word-break: break-all;
 }
 
 .popular .course-item .rating {
