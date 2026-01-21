@@ -89,6 +89,10 @@ button {
     --line-clamp: 2;
 }
 
+.word-break-all {
+    word-break: break-all;
+}
+
 /* ========== Header ========== */
 .header {
     position: sticky;
@@ -382,7 +386,6 @@ button {
     font-weight: 600;
     line-height: 1.67;
     padding-right: 6px;
-    word-break: break-all;
 }
 
 .popular .course-item .rating {
